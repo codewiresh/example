@@ -1,4 +1,4 @@
-# Example App - TanStack Start demo for codespace.sh
+# Example App - TanStack Start demo for codewire.sh
 # Consumes the dind template module
 
 variable "claude_code_oauth_token" {
@@ -8,10 +8,10 @@ variable "claude_code_oauth_token" {
 }
 
 module "workspace" {
-  source = "git::https://github.com/codespacesh/templates.git//dind/module?ref=v1.1.12"
+  source = "git::https://github.com/codewiresh/templates.git//dind/module?ref=v1.1.12"
 
   project_name           = "example"
-  git_repos              = { "example" = "https://github.com/codespacesh/example" }
+  git_repos              = { "example" = "https://github.com/codewiresh/example" }
   claude_code_oauth_token = var.claude_code_oauth_token
 
   services = {

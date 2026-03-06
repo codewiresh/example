@@ -10,13 +10,13 @@ jobs:
   push:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/codespacesh/coder-cli:latest
+      image: ghcr.io/codewiresh/coder-cli:latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Push template
         env:
-          CODER_URL: https://noel.codespace.sh
+          CODER_URL: https://noel.codewire.sh
           CODER_SESSION_TOKEN: ${{ secrets.CODER_TOKEN }}
         run: |
           coder templates push example --directory coder --yes \
