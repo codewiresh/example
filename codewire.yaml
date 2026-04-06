@@ -1,0 +1,6 @@
+image: full
+install: cd /workspace/example && bun install
+startup: cd /workspace/example && bun dev --host &
+ports:
+  - port: 5173
+    label: web
